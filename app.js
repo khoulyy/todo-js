@@ -43,4 +43,5 @@ addButton.addEventListener("click", (e) => {
             tr.remove();
         });
     }
+    inputField.value = "";
 });
