@@ -2,8 +2,10 @@
 const inputField = document.querySelector(".input-text");
 const tbody = document.querySelector("tbody");
 const addButton = document.querySelector(".add");
+const form = document.querySelector(".form");
 
-addButton.addEventListener("click", (e) => {
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
     if (inputField.value == "") {
         alert("Please Enter a Task");
     } else {

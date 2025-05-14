@@ -11,34 +11,91 @@ h1 {
     color: red;
 }
 
-table,
-th,
-td,
 tr {
-    border: 1px solid black;
-    border-collapse: collapse;
+    border-radius: 20px;
+    padding: 20px;
 }
+
+.delete {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.delete:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: red;
+    color: black;
+}
+
+tr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E7F2E4;
+    margin: 10px;
+}
+
+
 
 table {
     width: 500px;
     text-align: center;
+    border-radius: 5px;
 }
 
-th {
-    color: white;
-    background-color: red;
-}
 
 * {
-    padding: 20px;
     font-family: "poppins";
     font-weight: bold;
 }
 
 .input-text {
+    padding: 20px;
     font-size: 20px;
+    border: none;
+    border-radius: 18px;
+}
+
+.input-text:focus {
+    border: none;
+    outline: none;
 }
 
 .form {
+    padding: 20px;
     display: flex;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 0;
+}
+
+.add {
+    border-radius: 18px;
+    background-color: red;
+    padding: 20px;
+    border: none;
+    border-left: 2px solid black;
+}
+
+.add:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+tr:hover {
+    transition: 0.2s;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    accent-color: red;
+    cursor: pointer;
 }
